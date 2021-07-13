@@ -50,4 +50,126 @@ select {
 
 body {
   min-height: 100vh;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  letter-spacing: 0.6px;
+  color: #242421;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  font-family: 'Raleway', sans-serif;
+  color: #01353E;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.menu__link {
+  position: relative;
+  padding-bottom: 4px;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 1px solid transparent;
+  transition: border 0.5s;
+}
+
+.menu__link--active,
+.menu__link:hover {
+  border-bottom: 1px solid #00B2A0;
+}
+
+.header {
+  position: relative;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  background-image: url("../images/bg-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 47.6%;
+  left: 0;
+  background-image: linear-gradient(180deg, #01353E 0%, rgba(51, 51, 51, 0.595) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+}
+
+.header__inner {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 35px;
+  padding-bottom: 92px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__top {
+  position: relative;
+  align-self: stretch;
+  margin-bottom: auto;
+  padding-left: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 60px;
+  height: 63px;
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__menu {
+  padding: 17px 64px 17px 0px;
+}
+
+.header__title {
+  padding-top: 70px;
+  padding-left: 60px;
+  font-weight: bold;
+  font-size: 200px;
+  line-height: 235px;
+  text-transform: uppercase;
+}
+
+.header__subtitle {
+  margin-bottom: auto;
+  padding-left: 16px;
+  color: #000000;
+}
+
+.header__icon-box {
+  padding-top: 142px;
+  padding-left: 16px;
 }
