@@ -191,7 +191,7 @@ body {
 
 .about__inner {
   padding-top: 190px;
-  padding-bottom: 190px;
+  padding-bottom: 152px;
   padding-left: 8px;
 }
 
@@ -211,4 +211,125 @@ body {
   max-width: 481px;
   margin-right: 120px;
   margin-bottom: 28px;
+}
+
+.advantages {
+  background-color: #f8f8f8;
+}
+
+.advantages__inner {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.advantages__title {
+  margin-bottom: 70px;
+  padding-left: 72px;
+}
+
+.advantages__items {
+  margin-bottom: 103px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  flex-basis: 357px;
+}
+
+.advantages__item:not(:last-child) {
+  margin-right: 3px;
+}
+
+.advantages__subject {
+  position: relative;
+  max-width: 220px;
+  min-height: 58px;
+  margin: 0 auto 10px;
+  padding-left: 72px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages__subject--residence {
+  line-height: 56px;
+}
+
+.advantages__subject::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  width: 55px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages__subject--residence::before{
+  background-image: url("../images/icon-residence.svg");
+}
+
+.advantages__subject--flight::before{
+  left: 26px;
+  background-image: url("../images/icon-flight.svg");
+}
+
+.advantages__subject--training::before{
+  left: 15px;
+  background-image: url("../images/icon-training.svg");
+}
+
+.advantages__desc {
+  padding-left: 8px;
+}
+
+.advantages__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__info-list {
+  padding-left: 8px;
+}
+
+.advantages__info-item {
+  position: relative;
+  margin-bottom: 8px;
+  padding-top: 6px;
+  width: 350px;
+}
+
+.advantages__info-line {
+  display: inline-block;
+  height: 15px;
+  margin-right: 10px;
+  display: inline-block;
+  background-image: url("../images/line-progress.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 15px;
+}
+
+.advantages__info-number {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.advantages__info-text {
+  display: block;
+  line-height: 16px;
+}
+
+.advantages__text-box {
+  flex-basis: 592px;
+}
+
+.advantages__text {
+  margin-bottom: 30px;
 }
