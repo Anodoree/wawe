@@ -219,7 +219,7 @@ body {
 
 .advantages__inner {
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 168px;
 }
 
 .advantages__title {
@@ -332,4 +332,44 @@ body {
 
 .advantages__text {
   margin-bottom: 30px;
+}
+
+.conquer {
+  position: relative;
+  background-image: url("../images/bg-conquer.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.conquer__inner {
+  max-width: 50.6%;
+  padding-top: 200px;
+  padding-bottom: 345px;
+  padding-left: 8px;
+  background-color: #ffffff;
+}
+
+.conquer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+  background-color: #ffffff;
+}
+
+.conquer__title {
+  margin-bottom: 70px;
+  padding-left: 0;
+  text-align: left;
+}
+
+.conquer__text {
+  max-width: 510px;
+  margin-bottom: 30px;
+}
+
+.conquer__text--nomargin {
+  margin-bottom: 0;
 }
