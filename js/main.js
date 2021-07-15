@@ -1,3 +1,3 @@
 $(function(){
-  var mixer = mixitup('.grid');
+  var mixer = mixitup('.gallery__grid');
 });

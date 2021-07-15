@@ -221,47 +221,55 @@
       </div>
     </section>
 
-    <section class="galery">
+    <section class="gallery" id="gallery">
       <div class="container">
-        <div class="galery__inner">
+        <div class="gallery__inner">
 
-          <h2 class="galery__title title">Галерея</h2>
+          <h2 class="gallery__title title">Галерея</h2>
 
-        <div class="filter">
-          <button class="filter__btn" data-filter="all">Все</button>
-          <button class="filter__btn" data-filter=".tourist">Туристы</button>
-          <button class="filter__btn" data-filter=".nature">Природа</button>
-          <button class="filter__btn" data-filter=".pro">Профи</button>
-        </div>
+        <ul class="gallery__filter">
+          <li class="gallery__filter-item">
+            <button class="gallery__filter-btn" data-filter="all" type="button">Все</button>
+          </li>
+          <li class="gallery__filter-item">
+            <button class="gallery__filter-btn" data-filter=".tourist" type="button">Туристы</button>
+          </li>
+          <li class="gallery__filter-item">
+            <button class="gallery__filter-btn" data-filter=".nature" type="button">Природа</button>
+          </li>
+          <li class="gallery__filter-item">
+            <button class="gallery__filter-btn" data-filter=".pro" type="button">Профи</button>
+          </li>
+        </ul>
 
-        <div class="grid">
-          <div class="grid__item mix pro nature">
-            <img class="grid__img" src="images/galery/1.jpg" alt="Профессиональный серфер на большой волне">
-            <a class="grid__link" href="images/galery/1.jpg" data-fancybox="gallery"><span class="sr-only">Посмотреть фото во весь экран</span></a>
-          </div>
-          <div class="grid__item mix tourist">
-            <img class="grid__img" src="images/galery/2.jpg" alt="Серфер малышь">
-            <a class="grid__link" href="images/galery/2.jpg" data-fancybox="gallery"><span class="sr-only">Посмотреть фото во весь экран</span></a>
-          </div>
-          <div class="grid__item mix pro">
-            <img class="grid__img" src="images/galery/3.jpg" alt="Серфер идёт по берегу">
-            <a class="grid__link" href="images/galery/3.jpg" data-fancybox="gallery"><span class="sr-only">Посмотреть фото во весь экран</span></a>
-          </div>
-          <div class="grid__item mix tourist">
-            <img class="grid__img" src="images/galery/4.jpg" alt="Две девушки с досками">
-            <a class="grid__link" href="images/galery/4.jpg" data-fancybox="gallery"><span class="sr-only">Посмотреть фото во весь экран</span></a>
-          </div>
-          <div class="grid__item mix nature">
-            <img class="grid__img" src="images/galery/5.jpg" alt="Под гребнем волны">
-            <a class="grid__link" href="images/galery/5.jpg" data-fancybox="gallery"><span class="sr-only">Посмотреть фото во весь экран</span></a>
-          </div>
-          <div class="grid__item mix tourist">
-            <img class="grid__img" src="images/galery/6.jpg" alt="Девушка с доской смотрит на море">
-            <a class="grid__link" href="images/galery/6.jpg" data-fancybox="gallery"><span class="sr-only">Посмотреть фото во весь экран</span></a>
-          </div>
-        </div>
+        <ul class="gallery__grid">
+          <li class="gallery__item mix pro nature">
+            <img src="images/gallery/1.jpg" alt="Профессиональный серфер на большой волне" width="580" height="280">
+            <a class="gallery__link" href="images/gallery/1.jpg" data-fancybox="gallery__grid"><span class="sr-only">Посмотреть фото во весь экран</span></a>
+          </li>
+          <li class="gallery__item mix tourist">
+            <img src="images/gallery/2.jpg" alt="Малышь на доске для серфинга" width="290" height="280">
+            <a class="gallery__link" href="images/gallery/2.jpg" data-fancybox="gallery__grid"><span class="sr-only">Посмотреть фото во весь экран</span></a>
+          </li>
+          <li class="gallery__item mix pro">
+            <img src="images/gallery/3.jpg" alt="Серфер идёт по берегу" width="250" height="280">
+            <a class="gallery__link" href="images/gallery/3.jpg" data-fancybox="gallery__grid"><span class="sr-only">Посмотреть фото во весь экран</span></a>
+          </li>
+          <li class="gallery__item mix tourist">
+            <img src="images/gallery/4.jpg" alt="Две девушки с досками для серфинга" width="250" height="280">
+            <a class="gallery__link" href="images/gallery/4.jpg" data-fancybox="gallery__grid"><span class="sr-only">Посмотреть фото во весь экран</span></a>
+          </li>
+          <li class="gallery__item mix nature">
+            <img src="images/gallery/5.jpg" alt="Под гребнем волны" width="290" height="280">
+            <a class="gallery__link" href="images/gallery/5.jpg" data-fancybox="gallery__grid"><span class="sr-only">Посмотреть фото во весь экран</span></a>
+          </li>
+          <li class="gallery__item mix tourist">
+            <img src="images/gallery/6.jpg" alt="Девушка с доской для серфинга смотрит на море" width="580" height="280">
+            <a class="gallery__link" href="images/gallery/6.jpg" data-fancybox="gallery__grid"><span class="sr-only">Посмотреть фото во весь экран</span></a>
+          </li>
+        </ul>
 
-        <a class="galery__link" href="#">Показать еще</a>
+        <a class="button" href="#">Показать еще<span class="sr-only">Посмотреть все фотографии</span></a>
 
         </div>
       </div>
@@ -272,12 +280,12 @@
       </blockquote>
 
       <div class="container">
-        <div class="galery__inner">
-          <div class="galery__video" style="background-image: url(images/bg-video.jpg);">
-            <a class="galery__play" href="https://youtu.be/tNZ4gt5jMLI" data-fancybox><span class="sr-only">Посмотреть видео о школе серфинга Wawe</span></a>
+        <div class="gallery__inner">
+          <div class="gallery__video" style="background-image: url(images/bg-video.jpg);">
+            <a class="gallery__play" href="https://youtu.be/tNZ4gt5jMLI" data-fancybox><span class="sr-only">Посмотреть видео о серфинге</span></a>
           </div>
 
-          <ul class="galery__indicators indicators">
+          <ul class="gallery__indicators indicators">
             <li class="indicators__item">450
               <span class="indicators__text">туристов</span>
             </li>
