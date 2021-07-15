@@ -7,7 +7,8 @@
   <title>Wawe - Школа серфинга на канарских Островах</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -219,7 +220,86 @@
         </div>
       </div>
     </section>
+
+    <section class="galery">
+      <div class="container">
+        <div class="galery__inner">
+
+          <h2 class="galery__title title">Галерея</h2>
+
+        <div class="filter">
+          <button class="filter__btn" data-filter="all">Все</button>
+          <button class="filter__btn" data-filter=".tourist">Туристы</button>
+          <button class="filter__btn" data-filter=".nature">Природа</button>
+          <button class="filter__btn" data-filter=".pro">Профи</button>
+        </div>
+
+        <div class="grid">
+          <div class="grid__item mix pro nature">
+            <img class="grid__img" src="images/galery/1.jpg" alt="Профессиональный серфер на большой волне">
+            <a class="grid__link" href="images/galery/1.jpg" data-fancybox="gallery"><span class="sr-only">Посмотреть фото во весь экран</span></a>
+          </div>
+          <div class="grid__item mix tourist">
+            <img class="grid__img" src="images/galery/2.jpg" alt="Серфер малышь">
+            <a class="grid__link" href="images/galery/2.jpg" data-fancybox="gallery"><span class="sr-only">Посмотреть фото во весь экран</span></a>
+          </div>
+          <div class="grid__item mix pro">
+            <img class="grid__img" src="images/galery/3.jpg" alt="Серфер идёт по берегу">
+            <a class="grid__link" href="images/galery/3.jpg" data-fancybox="gallery"><span class="sr-only">Посмотреть фото во весь экран</span></a>
+          </div>
+          <div class="grid__item mix tourist">
+            <img class="grid__img" src="images/galery/4.jpg" alt="Две девушки с досками">
+            <a class="grid__link" href="images/galery/4.jpg" data-fancybox="gallery"><span class="sr-only">Посмотреть фото во весь экран</span></a>
+          </div>
+          <div class="grid__item mix nature">
+            <img class="grid__img" src="images/galery/5.jpg" alt="Под гребнем волны">
+            <a class="grid__link" href="images/galery/5.jpg" data-fancybox="gallery"><span class="sr-only">Посмотреть фото во весь экран</span></a>
+          </div>
+          <div class="grid__item mix tourist">
+            <img class="grid__img" src="images/galery/6.jpg" alt="Девушка с доской смотрит на море">
+            <a class="grid__link" href="images/galery/6.jpg" data-fancybox="gallery"><span class="sr-only">Посмотреть фото во весь экран</span></a>
+          </div>
+        </div>
+
+        <a class="galery__link" href="#">Показать еще</a>
+
+        </div>
+      </div>
+
+      <blockquote class="blockquote">
+        «Если сомневаешься – иди катайся.»
+        <span class="blockquote__author">Нэт Янг, первый Чемпион Мира по сёрфингу</span>
+      </blockquote>
+
+      <div class="container">
+        <div class="galery__inner">
+          <div class="galery__video" style="background-image: url(images/bg-video.jpg);">
+            <a class="galery__play" href="https://youtu.be/tNZ4gt5jMLI" data-fancybox><span class="sr-only">Посмотреть видео о школе серфинга Wawe</span></a>
+          </div>
+
+          <ul class="galery__indicators indicators">
+            <li class="indicators__item">450
+              <span class="indicators__text">туристов</span>
+            </li>
+            <li class="indicators__item">2500
+              <span class="indicators__text">часов катания</span>
+            </li>
+            <li class="indicators__item">10
+              <span class="indicators__text">проф. тренеров</span>
+            </li>
+            <li class="indicators__item">365
+              <span class="indicators__text">дней в году</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   
   </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
