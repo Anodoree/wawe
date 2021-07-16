@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wawe - Школа серфинга на канарских Островах</title>
+  <title>Wawe - Школа серфинга на канарских Островах | Главная страница</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <header class="header" style="background-image: url(images/bg-header.jpg);">
@@ -22,6 +23,7 @@
           <a class="header__logo logo" href="#">
             <img class="logo__img" src="images/logo.svg" alt="Логотип" width="60" height="63">
           </a>
+
           <nav class="header__nav nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -58,11 +60,16 @@
           </nav>
         </div>
 
-        <h1 class="header__title">Wawe
-          <span class="header__subtitle">Школа серфинга на&nbsp;канарских Островах</span>
+        <h1 class="header__title">
+          <span class="header__title-big">Wawe</span>
+          Школа серфинга на канарских Островах
         </h1>
 
-        <a class="header__icon" href="#about"><span class="sr-only">Пролистнуть экран к следующему разделу</span></a>
+        <a class="header__icon animation" href="#about">
+          <span class="sr-only">
+            Пролистнуть экран к следующему разделу
+          </span>
+        </a>
 
       </div>
     </div>
@@ -75,7 +82,7 @@
         <div class="about__inner">
 
           <h2 class="about__title title">
-            О&nbsp;школе, о&nbsp;серфинге, о&nbsp;канарах
+            О школе, о серфинге, о канарах
           </h2>
 
           <div class="about__content">
@@ -128,14 +135,15 @@
         <div class="advantages__inner">
 
           <h2 class="advantages__title title">
-            В&nbsp;школе вы&nbsp;получите
+            В школе вы получите
           </h2>
 
           <dl class="advantages__list">
             <div class="advantages__item">
               <dt class="advantages__subject advantages__subject--residence">Проживание</dt>
               <dd class="advantages__desc">
-                Наша школа серфинга находится в 100 м от океанского побережья. К услугам гостей открытый бассейн и бесплатный Wi-Fi. Из верхней террасы открывается вид на океан. Расстояние до центра города 15 мин.
+                Наша школа серфинга находится в 100 м от океанского побережья. К услугам гостей открытый бассейн и
+                бесплатный Wi-Fi. Из верхней террасы открывается вид на океан. Расстояние до центра города 15 мин.
               </dd>
             </div>
             <div class="advantages__item">
@@ -150,7 +158,8 @@
             <div class="advantages__item">
               <dt class="advantages__subject advantages__subject--training">Обучение и экипировку</dt>
               <dd class="advantages__desc">
-                Все оборудование и экипировка известных производителей и предоставляется на весь курс программы. Тренировочный процесс начинается с определения вашего уровня катания
+                Все оборудование и экипировка известных производителей и предоставляется на весь курс программы.
+                Тренировочный процесс начинается с определения вашего уровня катания
               </dd>
             </div>
           </dl>
@@ -201,7 +210,6 @@
             <p>
               Преподаватели нашей школы серфинга в числе лучших серферов на Канарских островах. Среди них - чемпион Европы
               по лонгборду, который с радостью поделится опытом как с новичками, так и более опытными серферами.
-              <br>
               Все члены преподавательского состава являются сертифицированными членами Федерации серфинга Канарских
               островов. Некоторые из них знают русский язык, что определенно позиционирует нас как русскую школу серфинга за
               границей!
@@ -228,79 +236,118 @@
 
           <h2 class="gallery__title title">Галерея</h2>
 
-        <ul class="gallery__menu menu">
-          <li class="menu__item">
-            <button class="menu__btn" data-filter="all" type="button">Все</button>
-          </li>
-          <li class="menu__item">
-            <button class="menu__btn" data-filter=".tourist" type="button">Туристы</button>
-          </li>
-          <li class="menu__item">
-            <button class="menu__btn" data-filter=".nature" type="button">Природа</button>
-          </li>
-          <li class="menu__item">
-            <button class="menu__btn" data-filter=".pro" type="button">Профи</button>
-          </li>
-        </ul>
+          <ul class="gallery__menu menu">
+            <li class="menu__item">
+              <button class="menu__btn" data-filter="all" type="button">Все</button>
+            </li>
+            <li class="menu__item">
+              <button class="menu__btn" data-filter=".tourist" type="button">Туристы</button>
+            </li>
+            <li class="menu__item">
+              <button class="menu__btn" data-filter=".nature" type="button">Природа</button>
+            </li>
+            <li class="menu__item">
+              <button class="menu__btn" data-filter=".pro" type="button">Профи</button>
+            </li>
+          </ul>
 
-        <ul class="gallery__grid">
-          <li class="gallery__item mix pro nature">
-            <img src="images/gallery/1.jpg" alt="Профессиональный серфер на большой волне" width="580" height="280">
-            <a class="gallery__link" href="images/gallery/1.jpg" data-fancybox="gallery__grid"><span class="sr-only">Посмотреть фото во весь экран</span></a>
-          </li>
-          <li class="gallery__item mix tourist">
-            <img src="images/gallery/2.jpg" alt="Малышь на доске для серфинга" width="290" height="280">
-            <a class="gallery__link" href="images/gallery/2.jpg" data-fancybox="gallery__grid"><span class="sr-only">Посмотреть фото во весь экран</span></a>
-          </li>
-          <li class="gallery__item mix pro">
-            <img src="images/gallery/3.jpg" alt="Серфер идёт по берегу" width="250" height="280">
-            <a class="gallery__link" href="images/gallery/3.jpg" data-fancybox="gallery__grid"><span class="sr-only">Посмотреть фото во весь экран</span></a>
-          </li>
-          <li class="gallery__item mix tourist">
-            <img src="images/gallery/4.jpg" alt="Две девушки с досками для серфинга" width="250" height="280">
-            <a class="gallery__link" href="images/gallery/4.jpg" data-fancybox="gallery__grid"><span class="sr-only">Посмотреть фото во весь экран</span></a>
-          </li>
-          <li class="gallery__item mix nature">
-            <img src="images/gallery/5.jpg" alt="Под гребнем волны" width="290" height="280">
-            <a class="gallery__link" href="images/gallery/5.jpg" data-fancybox="gallery__grid"><span class="sr-only">Посмотреть фото во весь экран</span></a>
-          </li>
-          <li class="gallery__item mix tourist">
-            <img src="images/gallery/6.jpg" alt="Девушка с доской для серфинга смотрит на море" width="580" height="280">
-            <a class="gallery__link" href="images/gallery/6.jpg" data-fancybox="gallery__grid"><span class="sr-only">Посмотреть фото во весь экран</span></a>
-          </li>
-        </ul>
+          <ul class="gallery__grid">
+            <li class="gallery__item mix pro nature">
+              <img src="images/gallery/1.jpg" alt="Профессиональный серфер на большой волне" width="580" height="280">
+              <a class="gallery__link" href="images/gallery/1.jpg" data-fancybox="gallery__grid">
+                <span class="sr-only">
+                  Посмотреть фото во весь экран
+                </span>
+              </a>
+            </li>
+            <li class="gallery__item mix tourist">
+              <img src="images/gallery/2.jpg" alt="Малышь на доске для серфинга" width="290" height="280">
+              <a class="gallery__link" href="images/gallery/2.jpg" data-fancybox="gallery__grid">
+                <span class="sr-only">
+                  Посмотреть фото во весь экран
+                </span>
+              </a>
+            </li>
+            <li class="gallery__item mix pro">
+              <img src="images/gallery/3.jpg" alt="Серфер идёт по берегу" width="250" height="280">
+              <a class="gallery__link" href="images/gallery/3.jpg" data-fancybox="gallery__grid">
+                <span class="sr-only">
+                  Посмотреть фото во весь экран
+                </span>
+              </a>
+            </li>
+            <li class="gallery__item mix tourist">
+              <img src="images/gallery/4.jpg" alt="Две девушки с досками для серфинга" width="250" height="280">
+              <a class="gallery__link" href="images/gallery/4.jpg" data-fancybox="gallery__grid">
+                <span class="sr-only">
+                  Посмотреть фото во весь экран
+                </span>
+              </a>
+            </li>
+            <li class="gallery__item mix nature">
+              <img src="images/gallery/5.jpg" alt="Под гребнем волны" width="290" height="280">
+              <a class="gallery__link" href="images/gallery/5.jpg" data-fancybox="gallery__grid">
+                <span class="sr-only">
+                  Посмотреть фото во весь экран
+                </span>
+              </a>
+            </li>
+            <li class="gallery__item mix tourist">
+              <img src="images/gallery/6.jpg" alt="Девушка с доской для серфинга смотрит на море" width="580" height="280">
+              <a class="gallery__link" href="images/gallery/6.jpg" data-fancybox="gallery__grid">
+                <span class="sr-only">
+                  Посмотреть фото во весь экран
+                </span>
+              </a>
+            </li>
+          </ul>
 
-        <a class="button" href="#">Показать еще<span class="sr-only">Посмотреть все фотографии</span></a>
+          <button class="button" type="button">Показать еще</button>
 
         </div>
       </div>
+    </section>
 
-      <blockquote class="blockquote">
-        «Если сомневаешься – иди катайся.»
-        <span class="blockquote__author">Нэт Янг, первый Чемпион Мира по сёрфингу</span>
-      </blockquote>
-
+    <section class="blockquote">
       <div class="container">
-        <div class="gallery__inner">
-          <div class="gallery__video" style="background-image: url(images/bg-video.jpg);">
-            <a class="gallery__play" href="https://youtu.be/tNZ4gt5jMLI" data-fancybox><span class="sr-only">Посмотреть видео о серфинге</span></a>
-          </div>
+        <blockquote class="blockquote__inner">
+          «Если сомневаешься – иди катайся.»
+          <cite class="blockquote__author">
+            Нэт Янг, первый Чемпион Мира по сёрфингу
+          </cite>
+        </blockquote>
+      </div>
+    </section>
 
-          <ul class="gallery__indicators indicators">
-            <li class="indicators__item">450
-              <span class="indicators__text">туристов</span>
-            </li>
-            <li class="indicators__item">2500
-              <span class="indicators__text">часов катания</span>
-            </li>
-            <li class="indicators__item">10
-              <span class="indicators__text">проф. тренеров</span>
-            </li>
-            <li class="indicators__item">365
-              <span class="indicators__text">дней в году</span>
-            </li>
-          </ul>
-        </div>
+    <section class="video">
+      <div class="container">
+        <a class="video__play" style="background-image: url(images/bg-video.jpg);" href="https://youtu.be/tNZ4gt5jMLI" data-fancybox>
+          <span class="sr-only">Посмотреть видео о серфинге</span>
+          <span class="video__icon"></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="numbers">
+      <div class="container">
+        <ul class="numbers__list">
+          <li class="numbers__item">
+            <span class="numbers__number">450</span>
+            туристов
+          </li>
+          <li class="numbers__item">
+            <span class="numbers__number">2500</span>
+            часов катания
+          </li>
+          <li class="numbers__item">
+            <span class="numbers__number">10</span>
+            проф. тренеров
+          </li>
+          <li class="numbers__item">
+            <span class="numbers__number">365</span>
+            дней в году
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -310,7 +357,7 @@
       </div>
 
       <div class="blog__wrapper" style="background-image: url(images/bg-blog.jpg);">
-        <div class="blog__inner">
+        <div class="container">
           <div class="blog__slider">
 
             <article class="blog__article">
@@ -407,7 +454,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="team" id="team">
       <div class="container">
         <h2 class="team__title title">Наша команда</h2>
@@ -448,7 +495,7 @@
       <div class="container">
         <div class="price__inner">
           <h2 class="price__title title">Пакеты услуг</h2>
-  
+
           <dl class="price__list">
             <div class="price__item">
               <dt class="price__name">Стандарт</dt>
@@ -460,7 +507,7 @@
               <dd>Вечеринка с угощениями и дискотекой</dd>
               <dd class="price__total">450</dd>
             </div>
-  
+
             <div class="price__item">
               <dt class="price__name">Все включено</dt>
               <dd>Проживание на вилле 6 ночей</dd>
@@ -473,7 +520,7 @@
               <dd>Завтраки на вилле</dd>
               <dd class="price__total">950</dd>
             </div>
-  
+
             <div class="price__item">
               <dt class="price__name">Профи</dt>
               <dd>Проживание на вилле 8 ночей</dd>
@@ -504,12 +551,13 @@
             <input class="form__input" type="text" placeholder="Имя">
             <input class="form__input" type="tel" placeholder="Телефон">
             <textarea class="form__textarea" id="message" name="feedback" cols="30" rows="10" placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
-            <button class="contacts__button button" type="submit">Отправить</button>
+            <button class="button" type="submit">Отправить</button>
           </form>
 
           <dl class="contacts__list">
             <dt class="contacts__item">
-              Есть вопрос?<br>Вы можете связаться с нами:
+              Есть вопрос?
+              Вы можете связаться с нами:
             </dt>
             <dd class="contacts__item">
               WhatsApp, Viber, Telegram
@@ -521,22 +569,22 @@
               </address>
             </dd>
           </dl>
-
-          <ul class="contacts__socials menu">
-            <li class="menu__item">
-              <a class="menu__btn" href="#">Instagram</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__btn" href="#">Facebook</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__btn" href="#">YouTube</a>
-            </li>
-          </ul>
         </div>
+
+        <ul class="contacts__socials menu">
+          <li class="menu__item">
+            <a class="menu__btn" href="#">Instagram</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__btn" href="#">Facebook</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__btn" href="#">YouTube</a>
+          </li>
+        </ul>
       </div>
     </section>
-  
+
   </main>
 
   <footer class="footer">
@@ -550,5 +598,6 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>
