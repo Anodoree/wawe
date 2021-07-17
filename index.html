@@ -7,7 +7,9 @@
   <title>Wawe - Школа серфинга на канарских Островах | Главная страница</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
@@ -60,7 +62,7 @@
         </nav>
 
         <h1 class="header__title">
-          <span class="header__title-big">Wawe</span>
+          <span class="header__brand">Wawe</span>
           Школа серфинга на канарских Островах
         </h1>
 
@@ -80,10 +82,7 @@
       <div class="container">
         <div class="about__inner">
 
-          <h2 class="about__title title">
-            О школе, о серфинге, о канарах
-          </h2>
-
+          <h2 class="about__title title">О школе, о серфинге, о канарах</h2>
           <div class="about__content">
             <p>
               Канарские острова не случайно называют европейскими Гавайями – это идеальное место для поклонников серфинга:
@@ -133,20 +132,21 @@
       <div class="container">
         <div class="advantages__inner">
 
-          <h2 class="advantages__title title">
-            В школе вы получите
-          </h2>
-
+          <h2 class="advantages__title title">В школе вы получите</h2>
           <dl class="advantages__list">
             <div class="advantages__item">
-              <dt class="advantages__subject advantages__subject--residence">Проживание</dt>
+              <dt class="advantages__subject advantages__subject--residence">
+                Проживание
+              </dt>
               <dd class="advantages__desc">
                 Наша школа серфинга находится в 100 м от океанского побережья. К услугам гостей открытый бассейн и
                 бесплатный Wi-Fi. Из верхней террасы открывается вид на океан. Расстояние до центра города 15 мин.
               </dd>
             </div>
             <div class="advantages__item">
-              <dt class="advantages__subject advantages__subject--flight">Перелет и страховку</dt>
+              <dt class="advantages__subject advantages__subject--flight">
+                Перелет и страховку
+              </dt>
               <dd class="advantages__desc">
                 Все участники программы застрахованы страховой компанией Allianz.
               </dd>
@@ -155,7 +155,9 @@
               </dd>
             </div>
             <div class="advantages__item">
-              <dt class="advantages__subject advantages__subject--training">Обучение и экипировку</dt>
+              <dt class="advantages__subject advantages__subject--training">
+                Обучение и экипировку
+              </dt>
               <dd class="advantages__desc">
                 Все оборудование и экипировка известных производителей и предоставляется на весь курс программы.
                 Тренировочный процесс начинается с определения вашего уровня катания
@@ -194,7 +196,6 @@
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -233,20 +234,22 @@
       <div class="container">
         <div class="gallery__inner">
 
-          <h2 class="gallery__title title">Галерея</h2>
+          <h2 class="gallery__title title">
+            Галерея
+          </h2>
 
           <ul class="gallery__menu menu">
             <li class="menu__item">
-              <button class="menu__btn animation" data-filter="all" type="button">Все</button>
+              <button class="menu__btn animation" type="button" data-filter="all">Все</button>
             </li>
             <li class="menu__item">
-              <button class="menu__btn animation" data-filter=".tourist" type="button">Туристы</button>
+              <button class="menu__btn animation" type="button" data-filter=".tourist">Туристы</button>
             </li>
             <li class="menu__item">
-              <button class="menu__btn animation" data-filter=".nature" type="button">Природа</button>
+              <button class="menu__btn animation" type="button" data-filter=".nature">Природа</button>
             </li>
             <li class="menu__item">
-              <button class="menu__btn animation" data-filter=".pro" type="button">Профи</button>
+              <button class="menu__btn animation" type="button" data-filter=".pro">Профи</button>
             </li>
           </ul>
 
@@ -456,35 +459,21 @@
       <div class="container">
         <h2 class="team__title title">Наша команда</h2>
 
-        <ul class="team__list">
-          <li class="team__item">
-            <figure class="team__figure">
-              <img class="team__photo" src="images/team-1.jpg" alt=" Mike, главный инструктор" width="330" height="450">
-              <figcaption>
-                <span class="team__name">Mike</span>
-                Главный инструктор
-              </figcaption>
-            </figure>
-          </li>
-          <li class="team__item">
-            <figure class="team__figure">
-              <img class="team__photo" src="images/team-2.jpg" alt="Mary, инструктор" width="330" height="450">
-              <figcaption>
-                <span class="team__name">Mary</span>
-                инструктор
-              </figcaption>
-            </figure>
-          </li>
-          <li class="team__item">
-            <figure class="team__figure">
-              <img class="team__photo" src="images/team-3.jpg" alt="Ольга, инструктор" width="330" height="450">
-              <figcaption>
-                <span class="team__name">Ольга</span>
-                инструктор
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+        <dl class="team__list">
+          <div class="team__item" style="background-image: url(images/team-1.jpg);">
+            <dt class="team__name">Mike</dt>
+            <dd class="team__position">Главный инструктор</dd>
+          </div>
+          <div class="team__item" style="background-image: url(images/team-2.jpg);">
+            <dt class="team__name">Mary</dt>
+            <dd class="team__position">инструктор</dd>
+          </div>
+          <div class="team__item" style="background-image: url(images/team-3.jpg);">
+            <dt class="team__name">Ольга</dt>
+            <dd class="team__position">инструктор</dd>
+          </div>
+        </dl>
+
       </div>
     </section>
 
@@ -544,28 +533,31 @@
         <h2 class="contacts__title title">Оставить заявку</h2>
 
         <div class="contacts__inner">
-          <form class="contacts__form form">
-            <input class="form__input" type="text" placeholder="Имя">
-            <input class="form__input" type="tel" placeholder="Телефон">
-            <textarea class="form__textarea" id="message" name="feedback" cols="30" rows="10" placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
+          <form class="contacts__form">
+            <input class="contacts__input" type="text" name="name" aria-label="Введите ваше имя" placeholder="Имя" required>
+            <input class="contacts__input" type="tel" name="tel" aria-label="Введите ваш телефон" placeholder="Телефон" required>
+            <textarea class="contacts__textarea" id="message" name="message" cols="30" rows="10"
+              placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время" required></textarea>
             <button class="button" type="submit">Отправить</button>
           </form>
 
-          <dl class="contacts__list">
-            <dt class="contacts__item">
-              Есть вопрос?
-              Вы можете связаться с нами:
-            </dt>
-            <dd class="contacts__item">
-              WhatsApp, Viber, Telegram
-              <a class="contacts__phone" href="tel:+34674863788">+3 467 486-37-88</a>
-            </dd>
-            <dd class="contacts__item">
-              <address>
-                Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660
-              </address>
-            </dd>
-          </dl>
+          <div class="contacts__box">
+            <div class="contacts__text">
+              <p>Есть вопрос?</p>
+              <p>Вы можете связаться с нами:</p>
+            </div>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                WhatsApp, Viber, Telegram
+                <a class="contacts__phone" href="tel:+34674863788">+3 467 486-37-88</a>
+              </li>
+              <li class="contacts__item">
+                <address>
+                  Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660
+                </address>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <ul class="contacts__socials menu">
