@@ -232,7 +232,7 @@
 
     <section class="gallery" id="gallery">
       <div class="container">
-        <div class="gallery__inner">
+        <div class="gallery__top">
 
           <h2 class="gallery__title title">
             Галерея
@@ -252,60 +252,45 @@
               <button class="menu__btn animation" type="button" data-filter=".pro">Профи</button>
             </li>
           </ul>
+        </div>
+      </div>
 
-          <ul class="gallery__grid">
-            <li class="gallery__item mix pro nature">
-              <img src="images/gallery/1.jpg" alt="Профессиональный серфер на большой волне" width="580" height="280">
-              <a class="gallery__link" href="images/gallery/1.jpg" data-fancybox="gallery__grid">
-                <span class="sr-only">
-                  Посмотреть фото во весь экран
-                </span>
-              </a>
-            </li>
-            <li class="gallery__item mix tourist">
-              <img src="images/gallery/2.jpg" alt="Малышь на доске для серфинга" width="290" height="280">
-              <a class="gallery__link" href="images/gallery/2.jpg" data-fancybox="gallery__grid">
-                <span class="sr-only">
-                  Посмотреть фото во весь экран
-                </span>
-              </a>
-            </li>
-            <li class="gallery__item mix pro">
-              <img src="images/gallery/3.jpg" alt="Серфер идёт по берегу" width="250" height="280">
-              <a class="gallery__link" href="images/gallery/3.jpg" data-fancybox="gallery__grid">
-                <span class="sr-only">
-                  Посмотреть фото во весь экран
-                </span>
-              </a>
-            </li>
-            <li class="gallery__item mix tourist">
-              <img src="images/gallery/4.jpg" alt="Две девушки с досками для серфинга" width="250" height="280">
-              <a class="gallery__link" href="images/gallery/4.jpg" data-fancybox="gallery__grid">
-                <span class="sr-only">
-                  Посмотреть фото во весь экран
-                </span>
-              </a>
-            </li>
-            <li class="gallery__item mix nature">
-              <img src="images/gallery/5.jpg" alt="Под гребнем волны" width="290" height="280">
-              <a class="gallery__link" href="images/gallery/5.jpg" data-fancybox="gallery__grid">
-                <span class="sr-only">
-                  Посмотреть фото во весь экран
-                </span>
-              </a>
-            </li>
-            <li class="gallery__item mix tourist">
-              <img src="images/gallery/6.jpg" alt="Девушка с доской для серфинга смотрит на море" width="580" height="280">
-              <a class="gallery__link" href="images/gallery/6.jpg" data-fancybox="gallery__grid">
-                <span class="sr-only">
-                  Посмотреть фото во весь экран
-                </span>
-              </a>
-            </li>
-          </ul>
+      <ul class="gallery__list">
+        <li class="gallery__item mix pro nature">
+          <a class="gallery__link" href="images/gallery/1.jpg" data-fancybox="gallery__grid">
+            <img class="gallery__img" src="images/gallery/1.jpg" alt="Профессиональный серфер на большой волне" width="580" height="280">
+          </a>
+        </li>
+        <li class="gallery__item mix tourist">
+          <a class="gallery__link" href="images/gallery/2.jpg" data-fancybox="gallery__grid">
+            <img class="gallery__img" src="images/gallery/2.jpg" alt="Малышь на доске для серфинга" width="290" height="280">
+          </a>
+        </li>
+        <li class="gallery__item mix pro">
+          <a class="gallery__link" href="images/gallery/3.jpg" data-fancybox="gallery__grid">
+            <img class="gallery__img" src="images/gallery/3.jpg" alt="Серфер идёт по берегу" width="250" height="280">
+          </a>
+        </li>
+        <li class="gallery__item mix tourist">
+          <a class="gallery__link" href="images/gallery/4.jpg" data-fancybox="gallery__grid">
+            <img class="gallery__img" src="images/gallery/4.jpg" alt="Две девушки с досками для серфинга" width="250" height="280">
+          </a>
+        </li>
+        <li class="gallery__item mix nature">
+          <a class="gallery__link" href="images/gallery/5.jpg" data-fancybox="gallery__grid">
+            <img class="gallery__img" src="images/gallery/5.jpg" alt="Под гребнем волны" width="290" height="280">
+          </a>
+        </li>
+        <li class="gallery__item mix tourist">
+          <a class="gallery__link" href="images/gallery/6.jpg" data-fancybox="gallery__grid">
+            <img class="gallery__img" src="images/gallery/6.jpg" alt="Девушка с доской для серфинга смотрит на море" width="580" height="280">
+          </a>
+        </li>
+      </ul>
 
+      <div class="container">
+        <div class="gallery__bottom">
           <button class="button" type="button">Показать еще</button>
-
         </div>
       </div>
     </section>
@@ -552,7 +537,7 @@
                 <a class="contacts__phone" href="tel:+34674863788">+3 467 486-37-88</a>
               </li>
               <li class="contacts__item">
-                <address>
+                <address class="contacts__address">
                   Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660
                 </address>
               </li>
