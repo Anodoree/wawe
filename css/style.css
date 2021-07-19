@@ -120,6 +120,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  text-align: center;
 }
 
 .nav__item:not(:last-child) {
@@ -129,16 +130,39 @@ body {
 .nav__link {
   padding-bottom: 4px;
   display: block;
-  white-space: nowrap;
   color: #ffffff;
   border-top: 3px solid transparent;
   border-bottom: 1px solid transparent;
   border-radius: 0 30% 0 0;
 }
 
+.nav__btn {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 46px;
+  height: 44px;
+  padding: 0;
+  background-color: #01353e;
+  border: 2px solid #ffffff;
+  border-radius: 20%;
+}
+
+.nav__line {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  margin: 4px auto;
+  background-color: #00b2a0;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  display: block;
+}
+
 .title {
   position: relative;
-  max-width: 87%;
+  max-width: 90%;
   margin: 0 auto 98px;
   font-weight: 600;
   font-size: 48px;
@@ -229,7 +253,6 @@ body {
 }
 
 .statistics__progress {
-  display: inline-block;
   height: 15px;
   margin-right: 10px;
   display: inline-block;
@@ -279,7 +302,7 @@ body {
 .header__inner {
   position: relative;
   height: 100vh;
-  min-height: 600px;
+  min-height: 560px;
   padding-top: 2.7%;
   padding-bottom: 7.5%;
   display: flex;
@@ -322,12 +345,13 @@ body {
 }
 
 .header__icon {
-  width: 26px;
-  height: 75px;
+  width: 20px;
+  height: 69px;
+  min-height: 60px;
   background-image: url("../images/click.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border-width: 3px;
+  background-size: contain;
   border-color: transparent;
   transition: transform 0.3s;
 }
@@ -425,10 +449,12 @@ body {
 .advantages__info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .advantages__text {
   flex-basis: 592px;
+  max-width: 592px;
 }
 
 .advantages__text p:not(:last-child) {
@@ -443,7 +469,7 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  width: 49.5%;
+  width: 50%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -955,4 +981,284 @@ body {
 
 .footer__logo:hover {
   border-bottom-color: #ffffff;
+}
+
+
+
+@media (max-width: 1199px) {
+
+  .conquer__img {
+    background-position-x: 90%;
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .nav__list {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 70px 20px 40px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #01353e;
+    transition: transform 0.5s;
+    transform: translateY(-200%);
+  }
+
+  .nav__list--active {
+    transform: translateY(0);
+  }
+
+  .nav__link {
+    padding: 8px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .nav__btn {
+    display: block;
+    position: fixed;
+    z-index: 5;
+  }
+
+  .title {
+    margin-bottom: 60px;
+    font-size: 38px;
+  }
+
+  .title::after {
+    bottom: -25px;
+    font-size: 60px;
+  }
+
+  .header__inner,
+  .header__nav {
+    position: static;
+  }
+
+  .header__logo {
+    position: fixed;
+    top: 3px;
+    left: 15px;
+    z-index: 5;
+  }
+
+  .header__brand {
+    font-size: 175px;
+    line-height: 1;
+  }
+
+  .header__title {
+    font-size: 22px;
+  }
+
+  .about__inner {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .about__content {
+    margin-right: 0;
+    grid-column-gap: 40px;
+  }
+
+  .advantages__inner {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .advantages__list {
+    margin-bottom: 70px;
+  }
+
+  .advantages__list {
+    justify-content: space-around;
+  }
+
+  .advantages__item {
+    flex-basis: 38%;
+  }
+
+  .advantages__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .advantages__subject {
+    font-size: 22px;
+  }
+
+  .conquer__inner {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  body {
+    line-height: 1.5;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .title {
+    margin-bottom: 40px;
+    font-size: 32px;
+  }
+
+  .title::after {
+    bottom: -20px;
+    font-size: 50px;
+  }
+
+  .statistics__item {
+    margin-right: 0;
+  }
+
+  .header__brand {
+    font-size: 130px;
+  }
+
+  .header__title {
+    font-size: 20px;
+  }
+
+  .about__inner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .about__content {
+    grid-template: repeat(8, auto) / 1fr;
+    grid-row-gap: 20px;
+  }
+
+  .advantages__inner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .advantages__item {
+    flex-basis: 43%;
+  }
+
+  .advantages__subject {
+    font-size: 20px;
+  }
+
+  .advantages__info {
+    display: block;
+  }
+
+  .advantages__statistics {
+    margin-bottom: 30px;
+  }
+
+  .advantages__item {
+    margin-right: 0;
+  }
+
+  .advantages__text {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .advantages__text p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .conquer {
+    background-color: #fffffff0;
+  }
+
+  .conquer__img {
+    z-index: -1;
+    width: 100%;
+  }
+
+  .conquer__inner {
+    max-width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: transparent;
+  }
+
+  .conquer__title {
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .conquer__text p {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .conquer__text p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 575px) {
+
+  .title {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+
+  .title::after {
+    bottom: -15px;
+    font-size: 40px;
+  }
+
+  .header__brand {
+    font-size: 82px;
+  }
+
+  .header__title {
+    max-width: 320px;
+    font-size: 18px;
+  }
+
+  .about__inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .advantages__inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .advantages__item {
+    flex-basis: 80%;
+  }
+
+  .conquer__inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+}
+
+@media (max-height: 398px) {
+
+  .nav__list {
+    padding: 15px 85px 15px;
+  }
+
 }
