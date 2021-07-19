@@ -17,14 +17,14 @@
 
 <body>
 
-  <header class="header" style="background-image: url(images/bg-header.jpg);">
+  <header class="header" id="header" style="background-image: url(images/bg-header.jpg);">
     <div class="container">
       <div class="header__inner">
 
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="header__logo nav__item">
-              <a class="logo animation" href="#">
+              <a class="logo animation" href="#header">
                 <img class="logo__img" src="images/logo.svg" alt="Логотип" width="60" height="63">
               </a>
             </li>
@@ -209,6 +209,7 @@
               </p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -268,6 +269,7 @@
               <button class="menu__btn animation" type="button" data-filter=".pro">Профи</button>
             </li>
           </ul>
+
         </div>
       </div>
 
@@ -485,8 +487,8 @@
 
     <section class="team" id="team">
       <div class="container">
-        <h2 class="team__title title">Наша команда</h2>
 
+        <h2 class="team__title title">Наша команда</h2>
         <dl class="team__list">
           <div class="team__item" style="background-image: url(images/team-1.jpg);">
             <dt class="team__name">Mike</dt>
@@ -508,6 +510,7 @@
     <section class="price" id="price">
       <div class="container">
         <div class="price__inner">
+
           <h2 class="price__title title">Пакеты услуг</h2>
 
           <dl class="price__list">
@@ -548,6 +551,7 @@
               <dd class="price__total">1450</dd>
             </div>
           </dl>
+
         </div>
       </div>
     </section>
@@ -561,6 +565,7 @@
         <h2 class="contacts__title title">Оставить заявку</h2>
 
         <div class="contacts__inner">
+
           <form class="contacts__form">
             <input class="contacts__input" type="text" name="name" aria-label="Введите ваше имя"
               placeholder="Имя" required>
@@ -589,6 +594,7 @@
               </li>
             </ul>
           </div>
+
         </div>
 
         <ul class="contacts__socials menu">
@@ -602,13 +608,14 @@
             <a class="menu__btn animation" href="#">YouTube</a>
           </li>
         </ul>
+
       </div>
     </section>
 
   </main>
 
   <footer class="footer">
-    <a class="footer__logo logo animation" href="#">
+    <a class="footer__logo logo animation" href="#header">
       <img class="logo__img" src="images/logo.svg" alt="Логотип" width="60" height="63">
     </a>
   </footer>

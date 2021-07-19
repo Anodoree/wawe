@@ -154,10 +154,10 @@ body {
   width: 30px;
   height: 4px;
   margin: 4px auto;
+  display: block;
   background-color: #00b2a0;
   border-top-left-radius: 100%;
   border-bottom-right-radius: 100%;
-  display: block;
 }
 
 .title {
@@ -1005,6 +1005,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     background-color: #01353e;
+    box-shadow: 0 0 35px 50px #01353e;
     transition: transform 0.5s;
     transform: translateY(-200%);
   }
@@ -1022,9 +1023,9 @@ body {
   }
 
   .nav__btn {
-    display: block;
     position: fixed;
     z-index: 5;
+    display: block;
   }
 
   .title {
