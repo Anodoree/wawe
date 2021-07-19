@@ -249,28 +249,25 @@
 
     <section class="gallery" id="gallery">
       <div class="container">
-        <div class="gallery__top">
 
-          <h2 class="gallery__title title">Галерея</h2>
+        <h2 class="gallery__title title">Галерея</h2>
 
-          <ul class="gallery__menu menu">
-            <li class="menu__item">
-              <button class="menu__btn animation" type="button" data-filter="all">Все</button>
-            </li>
-            <li class="menu__item">
-              <button class="menu__btn animation" type="button"
-                data-filter=".tourist">Туристы</button>
-            </li>
-            <li class="menu__item">
-              <button class="menu__btn animation" type="button"
-                data-filter=".nature">Природа</button>
-            </li>
-            <li class="menu__item">
-              <button class="menu__btn animation" type="button" data-filter=".pro">Профи</button>
-            </li>
-          </ul>
+        <ul class="gallery__menu menu">
+          <li class="menu__item">
+            <button class="menu__btn animation" type="button" data-filter="all">Все</button>
+          </li>
+          <li class="menu__item">
+            <button class="menu__btn animation" type="button"
+              data-filter=".tourist">Туристы</button>
+          </li>
+          <li class="menu__item">
+            <button class="menu__btn animation" type="button" data-filter=".nature">Природа</button>
+          </li>
+          <li class="menu__item">
+            <button class="menu__btn animation" type="button" data-filter=".pro">Профи</button>
+          </li>
+        </ul>
 
-        </div>
       </div>
 
       <ul class="gallery__list">
@@ -313,22 +310,20 @@
       </ul>
 
       <div class="container">
-        <div class="gallery__bottom">
-          <button class="button" type="button">Показать еще</button>
-        </div>
+        <button class="button" type="button">Показать еще</button>
       </div>
     </section>
 
-    <section class="blockquote">
+    <div class="blockquote">
       <blockquote class="blockquote__quote">
         «Если сомневаешься – иди катайся.»
         <cite class="blockquote__author">
           Нэт Янг, первый Чемпион Мира по сёрфингу
         </cite>
       </blockquote>
-    </section>
+    </div>
 
-    <section class="video">
+    <div class="video">
       <div class="container">
         <a class="video__play" style="background-image: url(images/bg-video.jpg);"
           href="https://youtu.be/tNZ4gt5jMLI" data-fancybox>
@@ -336,9 +331,9 @@
           <span class="video__icon"></span>
         </a>
       </div>
-    </section>
+    </div>
 
-    <section class="indicators">
+    <div class="indicators">
       <div class="container">
         <ul class="indicators__list">
           <li class="indicators__item">
@@ -359,7 +354,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </div>
 
     <section class="blog" id="blog">
       <div class="container">
@@ -490,16 +485,23 @@
 
         <h2 class="team__title title">Наша команда</h2>
         <dl class="team__list">
-          <div class="team__item" style="background-image: url(images/team-1.jpg);">
-            <dt class="team__name">Mike</dt>
+          <div class="team__item">
+            <dt class="team__name">
+              <img src="images/team-1.jpg" alt="Главный инструктор Mike" width="330"
+                height="450">Mike
+            </dt>
             <dd class="team__position">Главный инструктор</dd>
           </div>
-          <div class="team__item" style="background-image: url(images/team-2.jpg);">
-            <dt class="team__name">Mary</dt>
+          <div class="team__item">
+            <dt class="team__name">
+              <img src="images/team-2.jpg" alt="инструктор Mary" width="330" height="450">Mary
+            </dt>
             <dd class="team__position">инструктор</dd>
           </div>
-          <div class="team__item" style="background-image: url(images/team-3.jpg);">
-            <dt class="team__name">Ольга</dt>
+          <div class="team__item">
+            <dt class="team__name">
+              <img src="images/team-3.jpg" alt="инструктор Ольга" width="330" height="450">Ольга
+            </dt>
             <dd class="team__position">инструктор</dd>
           </div>
         </dl>
@@ -513,51 +515,59 @@
 
           <h2 class="price__title title">Пакеты услуг</h2>
 
-          <dl class="price__list">
-            <div class="price__item">
-              <dt class="price__name">Стандарт</dt>
-              <dd>Проживание на вилле 6 ночей </dd>
-              <dd>Номер категории стандарт</dd>
-              <dd>Экипировка для обучения</dd>
-              <dd>Обучение серфингу 5 тренировок по 2 часа</dd>
-              <dd>Страховка</dd>
-              <dd>Вечеринка с угощениями и дискотекой</dd>
-              <dd class="price__total">450</dd>
-            </div>
+          <ul class="price__items">
+            <li class="price__item">
+              <h3 class="price__name">Стандарт</h3>
+              <ul class="price__list">
+                <li>Проживание на вилле 6 ночей </li>
+                <li>Номер категории стандарт</li>
+                <li>Экипировка для обучения</li>
+                <li>Обучение серфингу 5 тренировок по 2 часа</li>
+                <li>Страховка</li>
+                <li>Вечеринка с угощениями и дискотекой</li>
+              </ul>
+              <span class="price__total">450<span>$</span></span>
+            </li>
 
-            <div class="price__item">
-              <dt class="price__name">Все включено</dt>
-              <dd>Проживание на вилле 6 ночей</dd>
-              <dd>Номер категории люкс</dd>
-              <dd>Экипировка для обучения</dd>
-              <dd>Обучение серфингу 8 тренировок по 2 часа</dd>
-              <dd>Страховка</dd>
-              <dd>Вечеринка с угощениями и дискотекой</dd>
-              <dd>Авиа перелет Тенерифе -Лансароте - Тенерифе </dd>
-              <dd>Завтраки на вилле</dd>
-              <dd class="price__total">950</dd>
-            </div>
+            <li class="price__item">
+              <h3 class="price__name">Все включено</h3>
+              <ul class="price__list">
+                <li>Проживание на вилле 6 ночей</li>
+                <li>Номер категории люкс</li>
+                <li>Экипировка для обучения</li>
+                <li>Обучение серфингу 8 тренировок по 2 часа</li>
+                <li>Страховка</li>
+                <li>Вечеринка с угощениями и дискотекой</li>
+                <li>Авиа перелет Тенерифе -Лансароте - Тенерифе </li>
+                <li>Завтраки на вилле</li>
+              </ul>
+              <span class="price__total">950<span>$</span></span>
+            </li>
 
-            <div class="price__item">
-              <dt class="price__name">Профи</dt>
-              <dd>Проживание на вилле 8 ночей</dd>
-              <dd>Номер категории люкс</dd>
-              <dd>Экипировка для обучения</dd>
-              <dd>Обучение серфингу 16 тренировок по 2 часа</dd>
-              <dd>Страховка</dd>
-              <dd>Вечеринка с угощениями и дискотекой</dd>
-              <dd>Авиа перелет Тенерифе -Лансароте - Тенерифе </dd>
-              <dd>Завтраки и ужины на вилле</dd>
-              <dd class="price__total">1450</dd>
-            </div>
-          </dl>
+            <li class="price__item">
+              <h3 class="price__name">Профи</h3>
+              <ul class="price__list">
+                <li>Проживание на вилле 8 ночей</li>
+                <li>Номер категории люкс</li>
+                <li>Экипировка для обучения</li>
+                <li>Обучение серфингу 16 тренировок по 2 часа</li>
+                <li>Страховка</li>
+                <li>Вечеринка с угощениями и дискотекой</li>
+                <li>Авиа перелет Тенерифе -Лансароте - Тенерифе </li>
+                <li>Завтраки и ужины на вилле</li>
+              </ul>
+              <span class="price__total">1450<span>$</span></span>
+            </li>
+          </ul>
 
         </div>
       </div>
     </section>
 
     <div class="location">
-      <div class="location__map"></div>
+      <img src="images/map.jpg"
+        alt="Карта с местоположением школы: Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660"
+        width="1470" height="640">
     </div>
 
     <section class="contacts" id="contacts">
@@ -571,29 +581,28 @@
               placeholder="Имя" required>
             <input class="contacts__input" type="tel" name="tel" aria-label="Введите ваш телефон"
               placeholder="Телефон" required>
-            <textarea class="contacts__textarea" id="message" name="message" cols="30" rows="10"
+            <textarea class="contacts__textarea" name="message"
+              aria-label="Оставьте здесь ваше сообщение, и мы свяжемся с Вами в ближайшее время"
               placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"
               required></textarea>
             <button class="button" type="submit">Отправить</button>
           </form>
 
-          <div class="contacts__box">
-            <div class="contacts__text">
-              <p>Есть вопрос?</p>
-              <p>Вы можете связаться с нами:</p>
-            </div>
+          <address class="contacts__address">
             <ul class="contacts__list">
               <li class="contacts__item">
-                WhatsApp, Viber, Telegram
-                <a class="contacts__phone" href="tel:+34674863788">+3 467 486-37-88</a>
+                <p>Есть вопрос?</p>
+                <p>Вы можете связаться с нами:</p>
               </li>
               <li class="contacts__item">
-                <address class="contacts__address">
-                  Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660
-                </address>
+                <p>WhatsApp, Viber, Telegram</p>
+                <p><a href="tel:+34674863788">+3 467 486-37-88</a></p>
+              </li>
+              <li class="contacts__item">
+                <p>Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660</p>
               </li>
             </ul>
-          </div>
+          </address>
 
         </div>
 
@@ -616,7 +625,7 @@
 
   <footer class="footer">
     <a class="footer__logo logo animation" href="#header">
-      <img class="logo__img" src="images/logo.svg" alt="Логотип" width="60" height="63">
+      <img src="images/logo.svg" alt="Логотип" width="60" height="63">
     </a>
   </footer>
 
