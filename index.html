@@ -177,21 +177,21 @@
           </dl>
 
           <div class="advantages__info">
-            <ul class="advantages__statistics statistics">
-              <li class="statistics__item">
-                <span class="statistics__progress" style="width: calc(85% - 53px);"></span>
-                <span class="statistics__number">85%</span>
-                <span class="statistics__text">Приехали второй раз</span>
+            <ul class="advantages__statistics">
+              <li class="advantages__point">
+                <span class="advantages__progress" style="width: calc(85% - 53px);"></span>
+                <span class="advantages__number">85%</span>
+                <span class="advantages__description">Приехали второй раз</span>
               </li>
-              <li class="statistics__item">
-                <span class="statistics__progress" style="width: calc(95% - 53px);"></span>
-                <span class="statistics__number">95%</span>
-                <span class="statistics__text">Научились кататься</span>
+              <li class="advantages__point">
+                <span class="advantages__progress" style="width: calc(95% - 53px);"></span>
+                <span class="advantages__number">95%</span>
+                <span class="advantages__description">Научились кататься</span>
               </li>
-              <li class="statistics__item">
-                <span class="statistics__progress" style="width: calc(99% - 53px);"></span>
-                <span class="statistics__number">99%</span>
-                <span class="statistics__text">Довольных клиентов</span>
+              <li class="advantages__point">
+                <span class="advantages__progress" style="width: calc(99% - 53px);"></span>
+                <span class="advantages__number">99%</span>
+                <span class="advantages__description">Довольных клиентов</span>
               </li>
             </ul>
 
@@ -252,19 +252,20 @@
 
         <h2 class="gallery__title title">Галерея</h2>
 
-        <ul class="gallery__menu menu">
-          <li class="menu__item">
-            <button class="menu__btn animation" type="button" data-filter="all">Все</button>
+        <ul class="gallery__filters">
+          <li class="gallery__filter">
+            <button class="gallery__btn animation" type="button" data-filter="all">Все</button>
           </li>
-          <li class="menu__item">
-            <button class="menu__btn animation" type="button"
+          <li class="gallery__filter">
+            <button class="gallery__btn animation" type="button"
               data-filter=".tourist">Туристы</button>
           </li>
-          <li class="menu__item">
-            <button class="menu__btn animation" type="button" data-filter=".nature">Природа</button>
+          <li class="gallery__filter">
+            <button class="gallery__btn animation" type="button"
+              data-filter=".nature">Природа</button>
           </li>
-          <li class="menu__item">
-            <button class="menu__btn animation" type="button" data-filter=".pro">Профи</button>
+          <li class="gallery__filter">
+            <button class="gallery__btn animation" type="button" data-filter=".pro">Профи</button>
           </li>
         </ul>
 
@@ -272,37 +273,43 @@
 
       <ul class="gallery__list">
         <li class="gallery__item mix pro nature">
-          <a class="gallery__link" href="images/gallery/1.jpg" data-fancybox="gallery__grid">
+          <a class="gallery__link animation-img" href="images/gallery/1.jpg"
+            data-fancybox="gallery__grid">
             <img class="gallery__img" src="images/gallery/1.jpg"
               alt="Профессиональный серфер на большой волне" width="580" height="280">
           </a>
         </li>
         <li class="gallery__item mix tourist">
-          <a class="gallery__link" href="images/gallery/2.jpg" data-fancybox="gallery__grid">
+          <a class="gallery__link animation-img" href="images/gallery/2.jpg"
+            data-fancybox="gallery__grid">
             <img class="gallery__img" src="images/gallery/2.jpg" alt="Малышь на доске для серфинга"
               width="290" height="280">
           </a>
         </li>
         <li class="gallery__item mix pro">
-          <a class="gallery__link" href="images/gallery/3.jpg" data-fancybox="gallery__grid">
+          <a class="gallery__link animation-img" href="images/gallery/3.jpg"
+            data-fancybox="gallery__grid">
             <img class="gallery__img" src="images/gallery/3.jpg" alt="Серфер идёт по берегу"
               width="250" height="280">
           </a>
         </li>
         <li class="gallery__item mix tourist">
-          <a class="gallery__link" href="images/gallery/4.jpg" data-fancybox="gallery__grid">
+          <a class="gallery__link animation-img" href="images/gallery/4.jpg"
+            data-fancybox="gallery__grid">
             <img class="gallery__img" src="images/gallery/4.jpg"
               alt="Две девушки с досками для серфинга" width="250" height="280">
           </a>
         </li>
         <li class="gallery__item mix nature">
-          <a class="gallery__link" href="images/gallery/5.jpg" data-fancybox="gallery__grid">
+          <a class="gallery__link animation-img" href="images/gallery/5.jpg"
+            data-fancybox="gallery__grid">
             <img class="gallery__img" src="images/gallery/5.jpg" alt="Под гребнем волны" width="290"
               height="280">
           </a>
         </li>
         <li class="gallery__item mix tourist">
-          <a class="gallery__link" href="images/gallery/6.jpg" data-fancybox="gallery__grid">
+          <a class="gallery__link animation-img" href="images/gallery/6.jpg"
+            data-fancybox="gallery__grid">
             <img class="gallery__img" src="images/gallery/6.jpg"
               alt="Девушка с доской для серфинга смотрит на море" width="580" height="280">
           </a>
@@ -310,7 +317,7 @@
       </ul>
 
       <div class="container">
-        <button class="button" type="button">Показать еще</button>
+        <button class="button animation-img" type="button">Показать еще</button>
       </div>
     </section>
 
@@ -325,10 +332,9 @@
 
     <div class="video">
       <div class="container">
-        <a class="video__play" style="background-image: url(images/bg-video.jpg);"
+        <a class="video__play animation-img" style="background-image: url(images/bg-video.jpg);"
           href="https://youtu.be/tNZ4gt5jMLI" data-fancybox>
           <span class="sr-only">Посмотреть видео о серфинге</span>
-          <span class="video__icon"></span>
         </a>
       </div>
     </div>
@@ -585,7 +591,7 @@
               aria-label="Оставьте здесь ваше сообщение, и мы свяжемся с Вами в ближайшее время"
               placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"
               required></textarea>
-            <button class="button" type="submit">Отправить</button>
+            <button class="button animation-img" type="submit">Отправить</button>
           </form>
 
           <address class="contacts__address">
@@ -596,7 +602,7 @@
               </li>
               <li class="contacts__item">
                 <p>WhatsApp, Viber, Telegram</p>
-                <p><a href="tel:+34674863788">+3 467 486-37-88</a></p>
+                <p><a class="animation-img" href="tel:+34674863788">+3 467 486-37-88</a></p>
               </li>
               <li class="contacts__item">
                 <p>Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660</p>
@@ -606,15 +612,15 @@
 
         </div>
 
-        <ul class="contacts__socials menu">
-          <li class="menu__item">
-            <a class="menu__btn animation" href="#">Instagram</a>
+        <ul class="contacts__socials socials">
+          <li class="socials__item">
+            <a class="socials__link animation" href="#">Instagram</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__btn animation" href="#">Facebook</a>
+          <li class="socials__item">
+            <a class="socials__link animation" href="#">Facebook</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__btn animation" href="#">YouTube</a>
+          <li class="socials__item">
+            <a class="socials__link animation" href="#">YouTube</a>
           </li>
         </ul>
 
