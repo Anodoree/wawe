@@ -1,3 +1,4 @@
+/* reset style */
 html {
   box-sizing: border-box;
 }
@@ -58,6 +59,22 @@ select {
   letter-spacing: inherit;
 }
 
+/* scrollbar style */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  border: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00b2a0;
+}
+
+/* main style */
 body {
   min-height: 100vh;
   font-weight: 300;
@@ -157,18 +174,18 @@ body {
   object-fit: contain;
 }
 
-.nav__list {
+.menu {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
 }
 
-.nav__item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 45px;
 }
 
-.nav__link {
+.menu__link {
   padding-bottom: 4px;
   display: block;
   color: #ffffff;
@@ -188,13 +205,12 @@ body {
   border-radius: 20%;
 }
 
-.nav__line {
-  position: relative;
+.nav__btn span {
   width: 30px;
   height: 4px;
   margin: 4px auto;
   display: block;
-  background-color: #00b2a0;
+  background-color: #ffffff;
   border-top-left-radius: 100%;
   border-bottom-right-radius: 100%;
 }
@@ -289,7 +305,7 @@ body {
 .header__inner {
   position: relative;
   height: 100vh;
-  min-height: 560px;
+  min-height: 515px;
   padding-top: 2.7%;
   padding-bottom: 7.5%;
   display: flex;
@@ -428,8 +444,8 @@ body {
 }
 
 .advantages__statistics {
-  flex-grow: 1;
-  max-width: 360px;
+  flex-basis: 360px;
+  max-width: 345px;
   margin-right: 15px;
 }
 
@@ -650,18 +666,19 @@ body {
 
 .blog__title {
   margin-bottom: 230px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.blog__wrapper {
+.blog__article {
   position: relative;
-  padding: 77px 0;
   color: #ffffff;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.blog__wrapper::before {
+.blog__article::before {
   content: "";
   position: absolute;
   top: 0;
@@ -671,10 +688,24 @@ body {
   background-color: rgba(36, 33, 33, 0.5);
 }
 
-.blog__article {
-  float: right;
+.blog__box {
+  position: relative;
+  height: 800px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.blog__content {
   max-width: 50%;
-  padding: 240px 0 252px;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.blog__content {
+  padding-right: 5px;
 }
 
 .blog__caption {
@@ -684,16 +715,14 @@ body {
   text-transform: uppercase;
 }
 
-.blog__link {
-  border-top: 2px solid transparent;
-  border-bottom: 1px solid transparent;
-}
-
-.blog__link:active {
-  color: #00b2a0;
+.blog__content p:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .slick-dots {
+  position: absolute;
+  bottom: 75px;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -710,20 +739,22 @@ body {
   background-color: #ffffff;
   border: 0;
   border-radius: 50%;
-  outline-color: #ffffff;
-  transition: background-color 0.3s;
+  outline: 0;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
 }
 
 .slick-dots button:focus {
-  background-color: #00b2a0;
+  transform: scale(1.5);
 }
 
 .slick-dots button:hover {
-  background-color: #01353e;
+  background-color: #00b2a0;
 }
 
 .slick-dots button:active {
-  background-color: #000000;
+  transform: scale(0.9);
 }
 
 .slick-active button {
@@ -758,9 +789,9 @@ body {
 }
 
 .team__name img {
+  margin-bottom: 20px;
   object-fit: contain;
   object-position: bottom;
-  margin-bottom: 20px;
 }
 
 .price {
@@ -833,12 +864,13 @@ body {
 
 .location img {
   width: 100%;
+  height: 640px;
   margin: auto;
   object-fit: cover;
 }
 
 .contacts__title {
-  margin-bottom: 236px;
+  margin-bottom: 232px;
 }
 
 .contacts__inner {
@@ -893,7 +925,7 @@ body {
 
 .contacts__address {
   flex-basis: 600px;
-  padding: 55px 52px;
+  padding: 59px 52px;
   font-style: normal;
   background-color: #f8f8f8;
 }
@@ -903,12 +935,12 @@ body {
 }
 
 .contacts__item:not(:last-child) {
-  margin-bottom: 70px;
+  margin-bottom: 68px;
 }
 
 .contacts__address a {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
   display: inline-block;
   line-height: 1.3;
 }
@@ -923,7 +955,7 @@ body {
 }
 
 .contacts__socials {
-  height: 416px;
+  height: 419px;
   justify-content: center;
   align-items: center;
 }
@@ -955,30 +987,29 @@ body {
 
 @media (max-width: 991px) {
 
-  .nav__list {
+  .header__menu {
     position: fixed;
     z-index: 4;
     top: 0;
     right: 0;
     left: 0;
     padding: 70px 20px 40px;
-    display: flex;
     justify-content: space-evenly;
     background-color: #01353e;
-    box-shadow: 0 0 35px 50px #01353e;
+    box-shadow: 0 0 10px 20px #01353e;
     transition: transform 0.5s;
     transform: translateY(-200%);
   }
 
-  .nav__list--active {
+  .header__menu--active {
     transform: translateY(0);
   }
 
-  .nav__link {
+  .menu__link {
     padding: 8px;
   }
 
-  .nav__item:not(:last-child) {
+  .menu__item:not(:last-child) {
     margin-right: 0;
   }
 
@@ -1005,9 +1036,21 @@ body {
 
   .header__logo {
     position: fixed;
-    top: 3px;
+    top: 10px;
     left: 15px;
     z-index: 5;
+    width: 46px;
+    height: 44px;
+    background-color: #01353e;
+    border: 2px solid #ffffff;
+    border-radius: 20%;
+  }
+
+  .header__logo img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    padding: 3px;
   }
 
   .header__brand {
@@ -1055,6 +1098,10 @@ body {
     font-size: 22px;
   }
 
+  .advantages__number {
+    font-size: 22px;
+  }
+
   .conquer__inner {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -1068,11 +1115,13 @@ body {
     line-height: 1.5;
   }
 
-  .nav__list {
+  .header__menu {
     flex-direction: column;
+    max-height: 100vh;
+    overflow-y: auto;
   }
 
-  .nav__item:not(:last-child) {
+  .menu__item:not(:last-child) {
     margin-right: 0;
   }
 
@@ -1113,6 +1162,10 @@ body {
     padding-bottom: 80px;
   }
 
+  .advantages__list {
+    margin-bottom: 55px;
+  }
+
   .advantages__item {
     flex-basis: 43%;
   }
@@ -1126,11 +1179,12 @@ body {
   }
 
   .advantages__statistics {
+    margin-right: 0;
     margin-bottom: 30px;
   }
 
-  .advantages__item {
-    margin-right: 0;
+  .advantages__number {
+    font-size: 20px;
   }
 
   .advantages__text {
@@ -1205,6 +1259,10 @@ body {
     padding-bottom: 60px;
   }
 
+  .advantages__list {
+    margin-bottom: 40px;
+  }
+
   .advantages__item {
     flex-basis: 80%;
   }
@@ -1212,14 +1270,6 @@ body {
   .conquer__inner {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-
-}
-
-@media (max-height: 398px) {
-
-  .nav__list {
-    padding: 15px 85px 15px;
   }
 
 }

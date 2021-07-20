@@ -1,19 +1,19 @@
 $(function() {
 
   $('.nav__btn').on('click', function() {
-    $('.nav__list').toggleClass('nav__list--active');
+    $('.header__menu').toggleClass('header__menu--active');
   });
 
-  $('.nav__link').on('click', function() {
-    $('.nav__list').removeClass('nav__list--active');
+  $('.menu__link').on('click', function() {
+    $('.header__menu').removeClass('header__menu--active');
   });
 
   $('.header__logo').on('click', function() {
-    $('.nav__list').removeClass('nav__list--active');
+    $('.header__menu').removeClass('header__menu--active');
   });
 
-  $(".nav__link").on("click", smoothScroll);
-  $(".logo").on("click", smoothScroll);
+  $(".menu__link").on("click", smoothScroll);
+  $(".logo").on("click", smoothScroll); 
   $(".header__icon").on("click", smoothScroll);
 
   function smoothScroll(event) {
@@ -27,7 +27,7 @@ $(function() {
 
 
 
-  $('.blog__slider').slick({
+  $('.blog__list').slick({
     autoplay: true,
     arrows: false,
     dots: true,
