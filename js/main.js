@@ -22,17 +22,14 @@ $(function() {
   });
 
   $(window).scroll(function() {
-    let i = document.documentElement.clientHeight;
-    if ($(this).scrollTop() >= i) {
-      $('.header__nav').addClass('header__nav--fixed');
-      $('.header__logo').addClass('header__logo--fixed');
+    if ($(this).scrollTop() >= 100) {
+      $('.header__menu').addClass('header__menu-fixed');
+      $('.header__logo').addClass('header__logo-fixed');
     } else {
-      $('.header__nav').removeClass('header__nav--fixed');
-      $('.header__logo').removeClass('header__logo--fixed');
+      $('.header__menu').removeClass('header__menu-fixed');
+      $('.header__logo').removeClass('header__logo-fixed');
     }
   });
-
-
 
   $('.blog__list').slick({
     arrows: false,
