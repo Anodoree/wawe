@@ -372,7 +372,7 @@ body {
 .header__logo {
   position: absolute;
   top: 0;
-  left: 6px;
+  left: 3px;
   z-index: 5;
 }
 
@@ -387,7 +387,7 @@ body {
 }
 
 .header__title {
-  margin-bottom: 6%;
+  margin-bottom: 7%;
   font-weight: inherit;
   font-size: inherit;
   color: #000000;
@@ -398,7 +398,6 @@ body {
   display: block;
   font-weight: 700;
   font-size: 200px;
-  line-height: 1.2;
   font-family: "Raleway", "Verdana", sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -630,7 +629,7 @@ body {
 .gallery__link {
   display: block;
   max-width: 580px;
-  height: 280px;
+  max-height: 280px;
 }
 
 .gallery__img {
@@ -667,7 +666,9 @@ body {
 
 .video__play {
   position: relative;
-  height: 600px;
+  height: 56vh;
+  min-height: 250px;
+  max-height: 600px;
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1083,10 +1084,6 @@ body {
     font-size: 34px;
   }
 
-  .video__play {
-    height: 500px;
-  }
-
   .indicators__number {
     font-size: 58px;
   }
@@ -1214,17 +1211,12 @@ body {
     padding-bottom: 2%;
   }
 
-  .header__logo {
-    left: 0;
-  }
-
   .header__logo img {
     max-height: 44px;
   }
 
   .header__logo--fixed {
     top: 3px;
-    left: 3px;
     background-color: #01353e;
   }
 
@@ -1338,10 +1330,6 @@ body {
     padding-top: 63px;
     padding-bottom: 50px;
     font-size: 30px;
-  }
-
-  .video__play {
-    height: 450px;
   }
 
   .indicators__list {
@@ -1527,7 +1515,6 @@ body {
 
   .advantages__text {
     margin-left: auto;
-    text-align: right;
   }
 
   .advantages__text p:not(:last-child) {
@@ -1552,10 +1539,6 @@ body {
     padding-top: 5px;
   }
 
-  .video__play {
-    height: 350px;
-  }
-
   .indicators__item {
     flex-basis: 140px;
   }
@@ -1569,6 +1552,7 @@ body {
   }
 
   .blog__box {
+    height: 568px;
     padding-top: 30px;
     padding-bottom: 40px;
   }
@@ -1584,6 +1568,10 @@ body {
 
   .slick-dots {
     bottom: 15px;
+  }
+
+  .slick-dots li:not(:last-child){
+    margin-right: 12px;
   }
 
   .slick-dots button {
@@ -1644,7 +1632,6 @@ body {
 
   .contacts__form {
     width: 70%;
-    margin-bottom: 30px;
   }
 
   .contacts__item:not(:last-child) {
@@ -1653,6 +1640,7 @@ body {
 
   .contacts__address {
     width: 70%;
+    padding: 35px 30px;
   }
 
   .contacts__address a {
@@ -1727,10 +1715,6 @@ body {
     font-size: 18px;
   }
 
-  .video__play {
-    height: 250px;
-  }
-
   .video__play::after {
     top: calc(50% - 35px);
     left: calc(50% - 20px);
@@ -1766,6 +1750,10 @@ body {
 
   .slick-dots {
     bottom: 10px;
+  }
+
+  .slick-dots li:not(:last-child){
+    margin-right: 10px;
   }
 
   .slick-dots button {
@@ -1809,6 +1797,7 @@ body {
 
   .contacts__form {
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .contacts__field {
@@ -1822,6 +1811,7 @@ body {
 
   .contacts__address {
     width: 100%;
+    padding: 25px 20px;
   }
 
   .contacts__address a {
