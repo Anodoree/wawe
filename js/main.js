@@ -23,11 +23,11 @@ $(function() {
 
   $(window).scroll(function() {
     if ($(this).scrollTop() >= 100) {
-      $('.header__menu').addClass('header__menu-fixed');
-      $('.header__logo').addClass('header__logo-fixed');
+      $('.header__nav').addClass('header__nav--scroll');
+      $('.header__logo').addClass('header__logo--scroll');
     } else {
-      $('.header__menu').removeClass('header__menu-fixed');
-      $('.header__logo').removeClass('header__logo-fixed');
+      $('.header__nav').removeClass('header__nav--scroll');
+      $('.header__logo').removeClass('header__logo--scroll');
     }
   });
 
