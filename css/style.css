@@ -749,7 +749,8 @@ body {
 
 .blog__box {
   position: relative;
-  height: 800px;
+  height: 86vh;
+  max-height: 800px;
   padding-top: 70px;
   padding-bottom: 100px;
   display: flex;
@@ -1099,10 +1100,6 @@ body {
     padding-top: 140px;
   }
 
-  .blog__box {
-    height: 700px;
-  }
-
   .blog__caption {
     font-size: 42px;
     line-height: 1.1;
@@ -1355,9 +1352,9 @@ body {
   }
 
   .blog__box {
-    height: 600px;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    height: 74vh;
+    padding-top: 30px;
+    padding-bottom: 50px;
   }
 
   .blog__content {
@@ -1369,7 +1366,7 @@ body {
   }
 
   .slick-dots {
-    bottom: 30px;
+    bottom: 20px;
   }
 
   .team__name img {
@@ -1568,8 +1565,8 @@ body {
   }
 
   .blog__box {
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
 
   .blog__content {
@@ -1582,16 +1579,16 @@ body {
   }
 
   .slick-dots {
-    bottom: 15px;
+    bottom: 10px;
   }
 
   .slick-dots li:not(:last-child) {
-    margin-right: 12px;
+    margin-right: 10px;
   }
 
   .slick-dots button {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
   }
 
   .team__list {
@@ -1765,30 +1762,12 @@ body {
     padding-top: 50px;
   }
 
-  .blog__box {
-    padding-top: 20px;
-    padding-bottom: 30px;
-  }
-
   .blog__content {
     min-width: 100%;
   }
 
   .blog__caption {
     font-size: 26px;
-  }
-
-  .slick-dots {
-    bottom: 10px;
-  }
-
-  .slick-dots li:not(:last-child) {
-    margin-right: 10px;
-  }
-
-  .slick-dots button {
-    width: 10px;
-    height: 10px;
   }
 
   .price {
