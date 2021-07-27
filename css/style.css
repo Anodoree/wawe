@@ -152,9 +152,7 @@ body {
   bottom: 0;
   left: 0;
   opacity: 0;
-  transition:
-    background-color 0.3s,
-    opacity 0.3s;
+  transition: background-color 0.3s, opacity 0.3s;
 }
 
 .animation-img:focus {
@@ -218,9 +216,7 @@ body {
   background-color: #ffffff;
   border-top-left-radius: 100%;
   border-bottom-right-radius: 100%;
-  transition:
-    transform 0.3s,
-    opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
 }
 
 .burger__lay {
@@ -316,16 +312,73 @@ body {
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  top: 2.7%;
+  right: 0;
+  left: 0;
+  z-index: 3;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.2;
+  transition: top 0.3s, background-color 0.3s;
+}
+
+.header--scroll {
+  top: 0;
+  background-color: #01353e;
+}
+
+.header__nav {
+  position: relative;
+  z-index: 4;
+}
+
+.header__logo {
+  position: absolute;
+  top: 3px;
+  z-index: 5;
+}
+
+.header__logo img {
+  max-height: 63px;
+  transition: max-height 0.3s
+}
+
+.header__logo--scroll img {
+  max-height: 44px;
+}
+
+.header__menu {
+  justify-content: center;
+  padding: 20px 70px;
+}
+
+.header__menu--scroll {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__burger {
+  position: fixed;
+  z-index: 5;
+  top: 10px;
+  right: 15px;
+  display: none;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 515px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-.header::before {
+.hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -340,100 +393,45 @@ body {
       rgba(51, 51, 51, 0) 100%);
 }
 
-.header__inner {
-  position: relative;
-  height: 100vh;
-  min-height: 515px;
-  padding-top: 2.7%;
-  padding-bottom: 7.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__nav-wrap {
-  height: 70px;
-}
-
-.header__nav {
-  position: fixed;
-  top: 2.7%;
-  right: 0;
-  left: 0;
-  z-index: 4;
-  transition:
-    top 0.3s,
-    background-color 0.3s;
-}
-
-.header__nav--scroll {
-  top: 0;
-  background-color: #01353e;
-}
-
-.header__nav-inner {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 70px;
-  display: flex;
-  justify-content: center;
-}
-
-.header__logo {
-  position: absolute;
-  top: 3px;
-  left: 5px;
-  z-index: 5;
-}
-
-.header__burger {
-  position: fixed;
-  z-index: 5;
-  top: 10px;
-  right: 15px;
-  display: none;
-}
-
-.header__title {
+.hero__title {
   margin-bottom: 7%;
-  font-weight: inherit;
-  font-size: inherit;
-  color: #000000;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
   text-align: center;
+  color: #000000;
 }
 
-.header__brand {
+.hero__brand {
   display: block;
   font-weight: 700;
   font-size: 200px;
   font-family: "Raleway", "Verdana", sans-serif;
-  text-align: center;
   text-transform: uppercase;
   color: #01353e;
 }
 
-.header__icon {
+.hero__icon {
+  position: absolute;
+  bottom: 8.5%;
   width: 20px;
   height: 69px;
-  min-height: 50px;
   background-image: url("../images/click.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  transition: transform 0.3s;
+  transition: outline-color 0.3s, transform 0.3s;
 }
 
-.header__icon:focus {
+.hero__icon:focus {
   outline-color: #ffffff;
 }
 
-.header__icon:hover {
+.hero__icon:hover {
   transform: scale(1.1);
 }
 
-.header__icon:active {
+.hero__icon:active {
   transform: scale(0.9);
 }
 
@@ -807,9 +805,7 @@ body {
   border: 0;
   border-radius: 50%;
   outline: 0;
-  transition:
-    background-color 0.3s,
-    transform 0.2s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .slick-dots button:focus {
@@ -1053,7 +1049,6 @@ body {
 
 
 @media (max-width: 1199px) {
-
   .padding {
     padding-top: 140px;
     padding-bottom: 140px;
@@ -1069,12 +1064,7 @@ body {
     font-size: 66px;
   }
 
-  .header__inner {
-    padding-top: 2%;
-    padding-bottom: 4%;
-  }
-
-  .header__brand {
+  .hero__brand {
     font-size: 175px;
     line-height: 1;
   }
@@ -1173,11 +1163,9 @@ body {
   .footer {
     padding: 50px;
   }
-
 }
 
 @media (max-width: 991px) {
-
   .overflow-hidden {
     overflow: hidden;
   }
@@ -1215,24 +1203,7 @@ body {
     font-size: 22px;
   }
 
-  .header__inner {
-    min-height: 320px;
-    padding-top: 1%;
-    padding-bottom: 2%;
-  }
-
-  .header__nav {
-    background-color: transparent;
-  }
-
-  .header__nav-inner {
-    padding: 0;
-    display: block;
-  }
-
   .header__logo--scroll {
-    top: 3px;
-    left: 3px;
     background-color: #01353e;
   }
 
@@ -1263,16 +1234,20 @@ body {
     display: block;
   }
 
-  .header__brand {
-    font-size: 150px;
+  .hero {
+    min-height: 320px;
   }
 
-  .header__title {
-    margin-bottom: 2%;
+  .hero__title {
+    margin-bottom: 4%;
     font-size: 22px;
   }
 
-  .header__icon {
+  .hero__brand {
+    font-size: 150px;
+  }
+
+  .hero__icon {
     height: 55px;
     width: 44px;
   }
@@ -1453,18 +1428,12 @@ body {
   .footer {
     padding: 40px;
   }
-
 }
 
 @media (max-width: 767px) {
-
   .padding {
     padding-top: 80px;
     padding-bottom: 80px;
-  }
-
-  .menu__item:not(:last-child) {
-    margin-right: 0;
   }
 
   .title {
@@ -1489,12 +1458,12 @@ body {
     padding-bottom: 9px;
   }
 
-  .header__brand {
-    font-size: 130px;
+  .hero__title {
+    font-size: 20px;
   }
 
-  .header__title {
-    font-size: 20px;
+  .hero__brand {
+    font-size: 130px;
   }
 
   .advantages__point {
@@ -1570,7 +1539,6 @@ body {
   }
 
   .blog__box {
-    height: 568px;
     padding-top: 30px;
     padding-bottom: 40px;
   }
@@ -1669,11 +1637,9 @@ body {
   .footer {
     padding: 25px;
   }
-
 }
 
 @media (max-width: 575px) {
-
   .padding {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1701,8 +1667,9 @@ body {
     padding-bottom: 10px;
   }
 
-  .header__brand {
-    font-size: 82px;
+  .header__logo {
+    position: fixed;
+    left: 3px;
   }
 
   .header__burger {
@@ -1710,9 +1677,13 @@ body {
     right: 5px;
   }
 
-  .header__title {
+  .hero__title {
     max-width: 320px;
     font-size: 18px;
+  }
+
+  .hero__brand {
+    font-size: 82px;
   }
 
   .advantages__list {
@@ -1840,5 +1811,4 @@ body {
   .footer {
     padding: 10px;
   }
-
 }
