@@ -1209,6 +1209,10 @@ body {
     font-size: 22px;
   }
 
+  .header__logo {
+    position: fixed;
+  }
+
   .header__logo--scroll {
     background-color: #01353e;
   }
@@ -1698,7 +1702,6 @@ body {
   }
 
   .header__logo {
-    position: fixed;
     left: 3px;
   }
 
